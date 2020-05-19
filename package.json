@@ -1,5 +1,5 @@
 {
-  "name": "@vuetify/preset-base",
+  "name": "@vuetify/preset",
   "version": "0.5.3",
   "description": "A Vue CLI 3 preset using Vuetify",
   "repository": "git@github.com:vuetifyjs/vue-cli-preset-vuetify.git",

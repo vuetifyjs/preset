@@ -1,11 +1,11 @@
-# vue-cli-preset-vuetify
+# Vuetify CLI Preset
 > A Vue CLI Preset for generating pre-scaffolded Vuetify applications
 
 ### 💿 Install
 
 Run the following command in your terminal:
 ```bash
-vue create my-project --preset vuetifyjs/vue-cli-preset-vuetify
+vue create my-project --preset vuetifyjs/preset
 ```
 
 Select a desired preset:
@@ -14,6 +14,9 @@ Preset options:
 ? The desired Vue CLI Preset (Use arrow keys)
 > Base (Basic scaffold)
 ```
+
+### 🚚 Roadmap
+- [ ] Add support for `essential` and `recommended` presets
 
 ### 💪 Supporting Vuetify
 <p>Vuetify is an open source MIT project that has been made possible due to the generous contributions by <a href="https://github.com/vuetifyjs/vuetify/blob/dev/BACKERS.md">community backers</a>. If you are interested in supporting this project, please consider:</p>

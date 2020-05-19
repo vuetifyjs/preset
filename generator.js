@@ -24,7 +24,7 @@ module.exports = (api, { preset = 'base' }) => {
     let subprocess
 
     try {
-      subprocess = await run(api, `vue add @vuetify/preset-${preset}`)
+      subprocess = await run(api, `vue add @vuetify/${preset}`)
     } catch (err) {
       console.warn(err)
     }
