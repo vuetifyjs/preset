@@ -17,7 +17,7 @@ async function run (api, command) {
   return subprocess
 }
 
-module.exports = (api, { preset }) => {
+module.exports = (api, { preset, materialStudy }) => {
   api.onCreateComplete(async () => {
     const presetName = `Vuetify ${preset} preset`
     const projectName = api.rootOptions.projectName
