@@ -20,28 +20,39 @@ module.exports = [{
   {
     type: 'list',
     name: 'materialStudy',
-    message: 'What material study do you want to add to your Vue project?',
+    message: 'What material-study do you want to add to your Vue project?',
     choices: [{
-      name: 'Basil',
-      value: 'basil',
-    }, {
-      name: 'Crane',
-      value: 'crane',
-    }, {
-      name: 'Fortnightly',
-      value: 'fortnightly',
-    }, {
-      name: 'Owl',
-      value: 'owl',
-    }, {
-      name: 'Rally',
-      value: 'rally',
-    }, {
-      name: 'Reply',
-      value: 'reply',
-    }, {
-      name: 'Shrine',
-      value: 'shrine',
-    }]
+        name: "None (default)",
+        value: "default"
+      },
+      {
+        name: 'Basil',
+        value: 'basil',
+      }, {
+        name: 'Crane',
+        value: 'crane',
+      }, {
+        name: 'Fortnightly',
+        value: 'fortnightly',
+      }, {
+        name: 'Owl',
+        value: 'owl',
+      }, {
+        name: 'Rally',
+        value: 'rally',
+      }, {
+        name: 'Reply',
+        value: 'reply',
+      }, {
+        name: 'Shrine',
+        value: 'shrine',
+      }
+    ]
+  },
+  {
+    type: 'confirm',
+    name: 'materialStudyPreset',
+    message: 'Do you want to use a material-study preset?',
+    default: 'false'
   }
 ]
