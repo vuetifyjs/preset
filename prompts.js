@@ -8,6 +8,14 @@ module.exports = [
         name: 'Base (A basic Vuetify application)',
         value: 'base'
       },
+      {
+        name: 'Essential (An Essential Vuetify application)',
+        value: 'Essential'
+      },
+      {
+        name: 'Recommended (A recommended Vuetify application)',
+        value: 'recommended'
+      },
     ],
     default: 'base',
   }
