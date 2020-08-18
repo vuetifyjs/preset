@@ -1,58 +1,45 @@
-module.exports = [{
+module.exports = [
+  {
     type: 'list',
     name: 'preset',
     message: 'Select from one of the following presets to scaffold your Vue project:',
-    choices: [{
-        name: 'Base (A basic Vuetify application)',
+    choices: [
+      {
+        name: 'Base (A basic Vuetify project)',
         value: 'base'
       },
       {
-        name: 'Essential (An Essential Vuetify application)',
-        value: 'Essential'
+        name: 'Essential (Coming soon)',
+        value: 'Essential',
+        disabled: true,
       },
       {
-        name: 'Recommended (A recommended Vuetify application)',
-        value: 'recommended'
+        name: 'Recommended (Coming soon)',
+        value: 'recommended',
+        disabled: true,
       },
     ],
     default: 'base',
   },
   {
-    type: 'list',
-    name: 'materialStudy',
-    message: 'What material-study do you want to add to your Vue project?',
-    choices: [{
-        name: "None (default)",
-        value: "default"
-      },
-      {
-        name: 'Basil',
-        value: 'basil',
-      }, {
-        name: 'Crane',
-        value: 'crane',
-      }, {
-        name: 'Fortnightly',
-        value: 'fortnightly',
-      }, {
-        name: 'Owl',
-        value: 'owl',
-      }, {
-        name: 'Rally',
-        value: 'rally',
-      }, {
-        name: 'Reply',
-        value: 'reply',
-      }, {
-        name: 'Shrine',
-        value: 'shrine',
-      }
-    ]
+    type: 'confirm',
+    name: 'cstudy',
+    message: 'Install a Material Study preset?',
+    default: false
   },
   {
-    type: 'confirm',
-    name: 'materialStudyPreset',
-    message: 'Do you want to use a material-study preset?',
-    default: 'false'
-  }
+    type: 'list',
+    name: 'study',
+    message: 'Select preset:',
+    when: answers => answers.cstudy,
+    choices: [
+      { name: 'Basil', value: 'basil' },
+      { name: 'Crane', value: 'crane' },
+      { name: 'Fortnightly', value: 'fortnightly' },
+      { name: 'Owl', value: 'owl' },
+      { name: 'Rally', value: 'rally' },
+      { name: 'Reply', value: 'reply' },
+      { name: 'Shrine', value: 'shrine' }
+    ]
+  },
 ]
