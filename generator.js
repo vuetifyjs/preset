@@ -18,13 +18,14 @@ async function run (api, command) {
 }
 
 module.exports = (api, { preset, materialStudy }) => {
+  console.log('materialStudy :>> ', materialStudy);
   api.onCreateComplete(async () => {
     const presetName = `Vuetify ${preset} preset`
     const projectName = api.rootOptions.projectName
     let subprocess
 
     try {
-      subprocess = await run(api, `vue add @vuetify/presets/${preset}`)
+      subprocess = await run(api, `vue add @vuetify/presets/essential`)
     } catch (err) {
       console.warn(err)
     }
