@@ -24,7 +24,7 @@ module.exports = (api, { preset, materialStudy }) => {
     let subprocess
 
     try {
-      subprocess = await run(api, `vue add @vuetify/presets/${preset}`)
+      subprocess = await run(api, `vue add @vuetify/${preset}`)
     } catch (err) {
       console.warn(err)
     }
@@ -34,7 +34,7 @@ module.exports = (api, { preset, materialStudy }) => {
     }
 
     subprocess.stdout.on('close', async () => {
-      console.log(`🍣  Successfully generated ${projectName} from the ${presetName}.\n`)
+      console.log(`🍣  Successfully generated ${projectName} from the ${presetName} preset.\n`)
     })
   })
 }
