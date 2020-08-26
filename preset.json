@@ -20,7 +20,8 @@
       "useAlaCarte": true,
       "usePolyfill": true,
       "locale": "en"
-    }
+    },
+    "@vuetify/vue-cli-plugin-presets": { "prompts": true }
   },
   "cssPreprocessor": "dart-sass",
   "configs": {
