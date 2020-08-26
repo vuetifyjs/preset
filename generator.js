@@ -17,7 +17,7 @@ async function run (api, command) {
   return subprocess
 }
 
-module.exports = (api, { preset = 'base' }) => {
+module.exports = (api, { preset, materialStudy }) => {
   api.onCreateComplete(async () => {
     const presetName = `Vuetify ${preset} preset`
     const projectName = api.rootOptions.projectName
@@ -34,7 +34,7 @@ module.exports = (api, { preset = 'base' }) => {
     }
 
     subprocess.stdout.on('close', async () => {
-      console.log(`🍣  Successfully generated ${projectName} from the ${presetName}.\n`)
+      console.log(`🍣  Successfully generated ${projectName} from the ${presetName} preset.\n`)
     })
   })
 }
