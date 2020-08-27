@@ -23,7 +23,7 @@
     },
     "@vuetify/vue-cli-plugin-presets": {
       "prompts": true,
-      "version": "^0.1.0-alpha.0"
+      "version": "^0.1.0-alpha.3"
     }
   },
   "cssPreprocessor": "dart-sass",
