@@ -21,7 +21,10 @@
       "usePolyfill": true,
       "locale": "en"
     },
-    "@vuetify/vue-cli-plugin-presets": { "prompts": true }
+    "@vuetify/vue-cli-plugin-presets": {
+      "prompts": true,
+      "version": "^0.1.0-alpha.0"
+    }
   },
   "cssPreprocessor": "dart-sass",
   "configs": {
