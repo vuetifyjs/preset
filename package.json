@@ -2,7 +2,6 @@
   "name": "@vuetify/preset",
   "version": "0.5.3",
   "description": "A Vue CLI 3 preset using Vuetify",
-  "repository": "git@github.com:Mert75/preset.git",
   "author": "John Leider <john@vuetifyjs.com>",
   "license": "MIT"
 }
